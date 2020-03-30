@@ -95,7 +95,7 @@ int main()
                 {
                     if (!(event->mask & IN_ISDIR))
                     {
-                        usleep(10000);
+                        // usleep(10000);
                         string filename = (char *)event->name;
                         string content = read_file_content(filename);
                         // cout << "file: " << filename << " content: \n"
